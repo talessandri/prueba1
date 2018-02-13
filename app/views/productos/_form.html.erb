@@ -1,0 +1,34 @@
+<%= form_for(@producto) do |f| %>
+<div class="row">
+    <div class="margen-formulario col-md-6">
+        <form>
+          <div class="form-group">
+            <label>Nombre Producto</label>
+            <%= f.text_field :name, class: "form-control", required: true, placeholder:"nombre" %>
+          </div>
+
+          <div class="form-group">
+            <label>Marca</label>
+            <%= f.text_field :name, class: "form-control", required: true,  placeholder:"marca" %>
+          </div>
+          
+          <div class="form-group">
+            <label>SKU</label>
+            <%= f.number_field :name, class: "form-control", required: true,  placeholder:"#sku" %>
+          </div>
+          
+          <div class="form-group">
+            <label>Foto
+            <input type="text" class="form-control" placeholder="url foto">
+          </div>
+          
+          <div class="form-group">
+            <label>Linea</label>
+            <input type="text" class="form-control" placeholder="linea">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+<% end %>

@@ -1,0 +1,7 @@
+<% @lineas.each do |linea| %>
+
+    <p>id: <%= linea.id %> name: <%= link_to linea.name, linea %></p>
+    
+<% end %>
+
+<%= link_to 'Nueva Linea', new_linea_path %>
